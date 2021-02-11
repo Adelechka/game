@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.StartController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="@../img/background.png" />
+      </ImageView>
+      <Button fx:id="multiplayerBtn" layoutX="145.0" layoutY="270.0" style="-fx-background-color: rgba(0,0,0,0);">
+         <graphic>
+            <ImageView fitHeight="84.0" fitWidth="310.0" pickOnBounds="true" preserveRatio="true">
+               <Image url="@../img/multiplayer_btn.png" />
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button  fx:id="singlePlayerBtn" layoutX="145.0" layoutY="170.0" mnemonicParsing="false" style="-fx-background-color: rgba(0,0,0,0);">
+         <graphic>
+            <ImageView fitHeight="84.0" fitWidth="310.0" pickOnBounds="true" preserveRatio="true">
+               <Image url="@../img/singleplayer_btn.png" />
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #E6E6FA;"
+            xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="sample.Controller">
+    <children>
+        <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../img/background_main.png"/>
+        </ImageView>
+
+        <ImageView fx:id="imageView" fitHeight="150.0" fitWidth="400.0" layoutX="100.0" layoutY="140.0"
+                   pickOnBounds="true" preserveRatio="true">
+            <Image url="@../img/question.png"/>
+        </ImageView>
+
+        <Button fx:id="stoneBtn" onMouseClicked="#playerChoice" layoutX="20" layoutY="310" style="-fx-background-color: rgba(0,0,0,0);">
+            <graphic>
+                <ImageView fitHeight="40.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true">
+                    <Image url="@../img/stone_btn.png"/>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button fx:id="scissorsBtn" onMouseClicked="#playerChoice" layoutX="212.5" layoutY="310" style="-fx-background-color: rgba(0,0,0,0);">
+            <graphic>
+                <ImageView fitHeight="40.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true">
+                    <Image url="@../img/scissors_btn.png"/>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button fx:id="paperBtn" onMouseClicked="#playerChoice" layoutX="405" layoutY="310" style="-fx-background-color: rgba(0,0,0,0);">
+            <graphic>
+                <ImageView fitHeight="40.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true">
+                    <Image url="@../img/paper_btn.png"/>
+                </ImageView>
+            </graphic>
+        </Button>
+
+
+        <Label fx:id="wins" alignment="CENTER" textAlignment="CENTER" layoutX="70.0" layoutY="14.0" prefHeight="64.0" prefWidth="110.0"
+               text="0">
+            <font>
+                <Font size="64.0"/>
+            </font>
+        </Label>
+        <Label fx:id="rounds" alignment="CENTER" layoutX="245.0" layoutY="14.0" prefHeight="64.0" prefWidth="110.0"
+               text="0">
+            <font>
+                <Font size="64.0"/>
+            </font>
+        </Label>
+        <Label fx:id="loses" alignment="CENTER" layoutX="420.0" layoutY="14.0" prefHeight="64.0" prefWidth="110.0"
+               text="0">
+            <font>
+                <Font size="64.0"/>
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
